@@ -33,10 +33,19 @@
     border: none;
     font-weight: 600;
 }
+.color-black{
+    color: black;
+}
+.color-orange{
+    color: #FF900E;
+}
 
 /* header styles */
 
 /* nav-bar styles */
+header{
+    margin-bottom: 130px;
+}
 .navbar{
     justify-content: space-between;
     align-items: center;
@@ -67,4 +76,27 @@
 }
 .banar-image{
     width: 100%;
+}
+.teams{
+    max-width: 1318px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 73px;
+}
+.teams-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.teams-title{
+    font-size: 3rem;
+}
+
+
+
+@media screen and (max-width:576px) {
+    .navbar{
+        flex-direction: column;
+    }
+    
 }
